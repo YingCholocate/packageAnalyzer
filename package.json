@@ -1,0 +1,52 @@
+{
+  "name": "packageAnalyzer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.ts",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node build.js",
+    "build": "cross-env NODE_ENV=production node build.js",
+    "build:tsc": "tsc -p tsconfig.json",
+    "test": "vitest",
+    "prepare": "husky install",
+    "lint": "eslint --ext=.jsx,.js,.tsx,.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-json": "^6.0.0",
+    "@types/node": "^20.4.10",
+    "@typescript-eslint/eslint-plugin": "^6.3.0",
+    "@typescript-eslint/parser": "^6.3.0",
+    "chalk": "4.0.0",
+    "commander": "^11.0.0",
+    "conf": "^11.0.2",
+    "cross-env": "^7.0.3",
+    "esbuild": "^0.19.1",
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^9.0.0",
+    "fs-extra": "^11.1.1",
+    "glob": "^10.3.3",
+    "husky": "^8.0.3",
+    "inquirer": "^9.2.10",
+    "lint-staged": "^13.2.3",
+    "ora": "^7.0.1",
+    "prettier": "^3.0.1",
+
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.1.6",
+    "util": "^0.12.5",
+    "vitest": "^0.34.1"
+  },
+  "lint": "eslint . --ext .ts, --fix",
+  "lint-staged": {
+    "*.{ts}": [
+      "prettier --write .",
+      "npm run lint"
+    ]
+  },
+  "bin": {
+    "analyzer-cli": "./bin/pkgAnalyzer-cli"
+  }
+}
