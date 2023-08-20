@@ -2,3 +2,4 @@ node_modules/
 .npmrc
 build
 rollup.config.js
+src/tests/npm-enviroment-test/

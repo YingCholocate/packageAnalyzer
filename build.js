@@ -3,6 +3,8 @@ import { join } from 'path';
 import { glob } from 'glob';
 import chalk from 'chalk';
 import fs from 'fs-extra';
+import process from 'process';
+
 const isProd = process.env.NODE_ENV == 'production';
 const libPath = join(process.cwd(), 'build');
 
