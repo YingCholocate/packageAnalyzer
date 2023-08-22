@@ -20,6 +20,10 @@
 - 执行npm link 或pnpm link -g （可能需要使用管理员执行命令行）
 - 即可使用 analyzer-cli --help等命令
 
+# 测试的方法
+
+- 在tests文件夹下，新建一个文件夹，然后选择在该文件夹下进行包版本管理，执行analyzer-cli --pnpm analyser的时候将路径指向该文件夹。
+
 # 使用技术栈介绍
 
 - 使用tsc 进行编译
