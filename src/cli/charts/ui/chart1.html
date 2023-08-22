@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Package Dependency Analysis</title>
+    <!-- 引入 echarts 库 -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    <!-- 引入依赖关系图的渲染逻辑 -->
+    <script src="dependencyGraph.js"></script>
+</head>
+
+<body>
+    <h1>Package Dependency Analysis</h1>
+    <div id="chart" style="width: 100%;height: 600px"></div>
+
+    <script>
+        // 获取从后端传来的依赖关系数据
+        const dependencyData = fetchDependencyData(); // 假设从后端获取的数据是一个 JSON 对象
+
+        // 初始化echarts实例
+        const chart = echarts.init(document.getElementById('chart'));
+
+        // 渲染依关系图
+        renderDependencyGraph(chart, dependencyData);
+
+        // 分析依赖关系
+        const analysisResult = analyzeDependency(dependencyData);
+
+        // 在页面中显示分析结果
+        showAnalysisResult(analysisResult);
+
+        // 从后端获取依赖关系数据
+        function fetchDependencyData() {
+            // 发起端请求获取数据，这里只是一个示例
+            return {
+                nodes: [
+                    { id: 'package1', value: '1.0.0' },
+                    { id: 'package2', value: '2.0.0' },
+                    { id: 'package3', value: '1.5.0' },
+                ],
+                links: [
+                    { source: 'package1', target: 'package2' },
+                    { source: 'package1', target: 'package3' },
+                ],
+            };
+        }
+
+        // 渲染依赖关系图
+        function renderDependencyGraph(chart, data) {
+            const option = {
+                // 配置依赖关系图的式和数据
+                series: [{
+                    type: 'graph',
+                    layout: 'force',
+                    force: {
+                        repulsion: 100,
+                    },
+                    data: data.nodes,
+                    links: data.links,
+                    emphasis: {
+                        focus: 'adjacency',
+                        lineStyle: {
+                            width: 2,
+                            color: '#333',
+                        },
+                    },
+                    roam: true,
+                    label: {
+                        position: 'right',
+                        formatter: '{b}',
+                    },
+                    lineStyle: {
+                        color: 'source',
+                        curveness: 0.3,
+                    },
+                }],
+            };
+
+            // 使用配置渲染依赖关系图
+            chart.setOption(option);
+        }
+
+        //析依赖关系
+        function analyzeDependency(data) {
+            // 进行依赖关系分析的逻辑，这里只是一个示例
+            const analysisResult = {
+                hasCircularDependency: false,
+                hasMultipleVersions: false,
+            };
+
+            // 判断是否存在循环依赖
+            const visited = new Set();
+            dfs = (node) => {
+                if (visited.has(node)) {
+                    analysisResult.hasCircularDependency = true;
+                    return;
+                }
+                visited.add(node);
+                for (const link of data.links) {
+                    if (link.source === node) {
+                        dfs(link.target);
+                    }
+                }
+                visited.delete(node);
+            };
+            for (const node of data.nodes) {
+                dfs(node.id);
+            }
+
+
+            // 判断是否存在多个版本实例
+            const versionMap = new Map();
+            for (const node of data.nodes) {
+                if (versionMap.has(node.id)) {
+                    analysisResult.hasMultipleVersions = true;
+                    break;
+                }
+                versionMap.set(node.id, node.value);
+                return analysisResult;
+            }
+        }
+
+        // 在页面中显示分析结果
+        function showAnalysisResult(result) {
+            const resultContainer = document.createElement('div');
+            resultContainer.innerHTML = `
+        <h2>Analysis Result:</h2>
+        <p>Has Circular Dependency: ${result.hasCircularDependency}</p >
+        <p>Has Multiple Versions ${result.hasMultipleVersions}</p >
+      `;
+            document.body.appendChild(resultContainer);
+        }
+    </script>
+</body>
+
+</html>

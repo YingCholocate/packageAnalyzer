@@ -1,4 +1,4 @@
-import fs from 'fs';
+import * as fs from 'fs';
 interface IPackage {
   dependencies?: { [propName: string]: string }; // "@types/node": "^20.4.10",
   devDependencies?: { [propName: string]: string };
@@ -35,8 +35,8 @@ function analyzeDependencies(
       checkedDependency,
       multipleVession,
     );
-
-    const depPackageJsonPath = `node_modules/${dep}/package.json`;
+    // TODO 需要更改路径，生产环境
+    const depPackageJsonPath = `./src/tests/npm-enviroment-test/node_modules/${dep}/package.json`;
 
     // 检查是否存在多个版本;
     if (fs.existsSync(depPackageJsonPath)) {
@@ -107,7 +107,9 @@ export const pnpmAnalyze = (packageJsonPath: string) => {
   const data = fs.readFileSync(packageJsonPath, 'utf8');
   //  读取package.json文件的内容
   const config = JSON.parse(data);
+  console.log(config);
   const [jsondata, multipleVesion] = analyzeDependencies(config);
+
   // const [, circleObj] = cycle(jsondata);
   // console.log(circleObj);
   return [jsondata, multipleVesion];

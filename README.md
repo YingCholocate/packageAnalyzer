@@ -22,9 +22,15 @@
 
 # 测试的方法
 
-- 在tests文件夹下，新建一个文件夹，然后选择在该文件夹下进行包版本管理，执行analyzer-cli --pnpm analyser的时候将路径指向该文件夹。
+- 在tests文件夹下，新建一个文件夹，然后选择在该文件夹下进行包版本管理，控制台切换至该目录，执行pnpm add glob
+  执行 ts-node src/index.ts analyzer-cli --separator=/ a/b/c --pnpmAnalyze输出分析结果
 
 # 使用技术栈介绍
 
 - 使用tsc 进行编译
-- 图表绘制：待定
+- Commander 命令行
+
+# 踩坑
+
+- node.js - Nestjs readFileSync 返回无法读取未定义的属性 'readFileSync'
+- - 使用的是 Typescript 和 fs没有默认导出，你必须使用 import \* as fs from 'fs'
