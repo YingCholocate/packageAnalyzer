@@ -2,4 +2,4 @@
 
 //入口文件
 
-require('../build/index.js')
+require('../build/cli/index.js');

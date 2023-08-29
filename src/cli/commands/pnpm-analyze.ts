@@ -1,15 +1,11 @@
+import { IDependency } from '@/interfaces';
 import * as fs from 'fs';
+
 interface IPackage {
   dependencies?: { [propName: string]: string }; // "@types/node": "^20.4.10",
   devDependencies?: { [propName: string]: string };
 }
-// 输出的json数据结构
-interface IDependency {
-  [propName: string]: {
-    version: string;
-    dependencies: IDependency;
-  };
-}
+
 interface IMutileVersion {
   [propName: string]: string[];
 }
@@ -19,7 +15,7 @@ function analyzeDependencies(
   jsonDependency: IDependency = {},
   checkedDependency = new Map(),
   multipleVession: IMutileVersion = {},
-) {
+) :[IDependency,IMutileVersion]{
   const dependencies = packageJson.dependencies || {};
   const devDependencies = packageJson.devDependencies || {};
   const allDependencies = { ...dependencies, ...devDependencies };
@@ -36,7 +32,7 @@ function analyzeDependencies(
       multipleVession,
     );
     // TODO 需要更改路径，生产环境
-    const depPackageJsonPath = `./src/tests/npm-enviroment-test/node_modules/${dep}/package.json`;
+    const depPackageJsonPath = `./src/tests/npm-environment-test/node_modules/${dep}/package.json`;
 
     // 检查是否存在多个版本;
     if (fs.existsSync(depPackageJsonPath)) {
@@ -101,13 +97,12 @@ function hasCircularDependency(
   return [false, multipleVesion];
 }
 
-export const pnpmAnalyze = (packageJsonPath: string) => {
+export const pnpmAnalyze = (packageJsonPath: string):[IDependency,IMutileVersion] => {
   // main方法
 
   const data = fs.readFileSync(packageJsonPath, 'utf8');
   //  读取package.json文件的内容
   const config = JSON.parse(data);
-  console.log(config);
   const [jsondata, multipleVesion] = analyzeDependencies(config);
 
   // const [, circleObj] = cycle(jsondata);
