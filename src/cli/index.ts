@@ -1,9 +1,10 @@
 import { Command } from 'commander';
 import chalk from 'chalk';
-import { pnpmAnalyze } from './commands/pnpm-analyze.ts';
-import { generateJsonFile } from './commands/generateJsonFile.ts';
-import { generateDepth } from './commands/depth.ts';
+import { pnpmAnalyze } from './commands/pnpm-analyze';
+import { generateJsonFile } from './commands/generateJsonFile';
+import { generateDepth } from './commands/depth';
 import * as fs from "fs";
+import { generateServer } from 'server';
 
 (async () => {
   const program = new Command();
@@ -30,12 +31,6 @@ import * as fs from "fs";
         }else{
           console.log(chalk.green("no multiple version"));
         }
-
-        if(options.json){
-          await generateJsonFile(jsondata,options.json)
-          console.log(chalk.green("generate data sucessfully"))
-        }
-
         if(options.depth){
           console.log(chalk.green("depth:"+options.depth))
           const result=await generateDepth(parseInt(options.depth),jsondata);
@@ -44,8 +39,15 @@ import * as fs from "fs";
             console.error("generate json data to ./depthdata.json");
           });
         }
+        if(options.json){
+          await generateJsonFile(jsondata,options.json)
+          console.log(chalk.green("generate data sucessfully"))
+          return;
+        }
+        await generateServer()
   
     });
+
 
   await program.parseAsync(process.argv);
 })().catch((err: Error) => {
