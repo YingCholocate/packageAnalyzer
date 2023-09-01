@@ -8,10 +8,10 @@
 
     /* Bundler mode */
     "moduleResolution": "Bundler",
-    "allowImportingTsExtensions":false,
+    "allowImportingTsExtensions":true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": false,
+    "noEmit": true,
     "esModuleInterop": true,
     "jsx": "react-jsx",
 
@@ -25,11 +25,12 @@
     "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"],
-      "lib/*": ["lib/*"]
+      "lib/*": ["lib/*"],
+      "server/*":["server/*"]
     }
   },
   "include": [
-    "types/**/*",
+    "src/cli/types/**/*",
     "lib/**/*",
     "bin/**/*",
     "src/**/*",

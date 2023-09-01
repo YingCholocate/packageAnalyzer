@@ -1,4 +1,4 @@
-import { IDependency } from '@/interfaces';
+import { IDependency, ILinks, INode } from '@/interfaces';
 import * as fs from 'fs';
 
 interface IPackage {
@@ -15,6 +15,8 @@ function analyzeDependencies(
   jsonDependency: IDependency = {},
   checkedDependency = new Map(),
   multipleVession: IMutileVersion = {},
+  chartNode:INode[]=[],
+  chartLink:ILinks[]=[],
 ) :[IDependency,IMutileVersion]{
   const dependencies = packageJson.dependencies || {};
   const devDependencies = packageJson.devDependencies || {};
@@ -22,6 +24,7 @@ function analyzeDependencies(
 
   for (const [dep, version] of Object.entries(allDependencies)) {
     // console.log(`Dependency: ${dep}@${version}`);
+    chartNode.push({"id":dep,"value":version})
     jsonDependency[dep] = { version: version, dependencies: {} };
     // 检查是否存在多个版本
     [, multipleVession] = hasCircularDependency(
@@ -41,13 +44,19 @@ function analyzeDependencies(
         ...depPackageJson.dependencies,
         ...depPackageJson.devDependencies,
       };
+     
       //   console.log(subDependencies);
       if (Object.keys(subDependencies).length > 0) {
+        Object.keys(subDependencies).map(key=>{
+          chartLink.push({"source":dep,"target":key})
+        })
         analyzeDependencies(
           depPackageJson,
           jsonDependency[dep].dependencies,
           checkedDependency,
           multipleVession,
+          chartNode,
+          chartLink
         );
       }
     }

@@ -5,3 +5,11 @@ export interface IDependency {
       dependencies: IDependency;
     };
   }
+  export interface INode {
+    id: string;
+    value: string;
+  }
+  export interface ILinks {
+    source: string;
+    target: string;
+  }

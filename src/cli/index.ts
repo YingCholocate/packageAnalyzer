@@ -1,10 +1,11 @@
 import { Command } from 'commander';
 import chalk from 'chalk';
-import { pnpmAnalyze } from './commands/pnpm-analyze';
-import { generateJsonFile } from './commands/generateJsonFile';
-import { generateDepth } from './commands/depth';
+import { pnpmAnalyze } from './commands/pnpm-analyze.ts';
+import { generateJsonFile } from './commands/generateJsonFile.ts';
+import { generateDepth } from './commands/depth.ts';
 import * as fs from "fs";
-import { generateServer } from 'server';
+import { generateServer } from 'server/index.ts';
+
 
 (async () => {
   const program = new Command();
@@ -39,7 +40,12 @@ import { generateServer } from 'server';
             console.error("generate json data to ./depthdata.json");
           });
         }
-        if(options.json){
+        if(options.json!==undefined){
+          console.log(
+            `${chalk.green(
+              "if you don't have the value of filepath,it will use './data.json' for default path",
+            )}`,
+          );
           await generateJsonFile(jsondata,options.json)
           console.log(chalk.green("generate data sucessfully"))
           return;
