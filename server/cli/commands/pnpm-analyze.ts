@@ -1,4 +1,4 @@
-import { IDependency, ILinks, INode } from '@/interfaces';
+import { IDependency, ILinks, IMutileVersion, INode } from '@/interfaces';
 import * as fs from 'fs';
 
 interface IPackage {
@@ -6,25 +6,24 @@ interface IPackage {
   devDependencies?: { [propName: string]: string };
 }
 
-interface IMutileVersion {
-  [propName: string]: string[];
-}
 // 分析依赖
 function analyzeDependencies(
   packageJson: IPackage,
   jsonDependency: IDependency = {},
   checkedDependency = new Map(),
   multipleVession: IMutileVersion = {},
-  chartNode:INode[]=[],
-  chartLink:ILinks[]=[],
-) :[IDependency,IMutileVersion]{
+  chartNode: INode[] = [],
+  chartLink: ILinks[] = [],
+): [IDependency, IMutileVersion, INode[]?, ILinks[]?] {
   const dependencies = packageJson.dependencies || {};
   const devDependencies = packageJson.devDependencies || {};
   const allDependencies = { ...dependencies, ...devDependencies };
 
   for (const [dep, version] of Object.entries(allDependencies)) {
-    // console.log(`Dependency: ${dep}@${version}`);
-    chartNode.push({"id":dep,"value":version})
+    if (!checkedDependency.has(dep)) {
+      chartNode.push({ id: dep, name: dep, value: version });
+    }
+
     jsonDependency[dep] = { version: version, dependencies: {} };
     // 检查是否存在多个版本
     [, multipleVession] = hasCircularDependency(
@@ -35,7 +34,7 @@ function analyzeDependencies(
       multipleVession,
     );
     // TODO 需要更改路径，生产环境
-    const depPackageJsonPath = `./src/tests/npm-environment-test/node_modules/${dep}/package.json`;
+    const depPackageJsonPath = `./src/tests/npm-enviroment-test/node_modules/${dep}/package.json`;
 
     // 检查是否存在多个版本;
     if (fs.existsSync(depPackageJsonPath)) {
@@ -44,24 +43,24 @@ function analyzeDependencies(
         ...depPackageJson.dependencies,
         ...depPackageJson.devDependencies,
       };
-     
+
       //   console.log(subDependencies);
       if (Object.keys(subDependencies).length > 0) {
-        Object.keys(subDependencies).map(key=>{
-          chartLink.push({"source":dep,"target":key})
-        })
+        Object.keys(subDependencies).map((key) => {
+          chartLink.push({ source: dep, target: key });
+        });
         analyzeDependencies(
           depPackageJson,
           jsonDependency[dep].dependencies,
           checkedDependency,
           multipleVession,
           chartNode,
-          chartLink
+          chartLink,
         );
       }
     }
   }
-  return [jsonDependency, multipleVession];
+  return [jsonDependency, multipleVession, [...new Set(chartNode)], [...new Set(chartLink)]];
 }
 //  分析是否有循环引用
 // function cycle(obj: IDependency, parent = undefined) {
@@ -82,7 +81,7 @@ function analyzeDependencies(
 //   return obj;
 // }
 
-function hasCircularDependency(
+export function hasCircularDependency(
   dependencyName: string,
   version: string,
   dependencyMap: IDependency,
@@ -106,15 +105,16 @@ function hasCircularDependency(
   return [false, multipleVesion];
 }
 
-export const pnpmAnalyze = (packageJsonPath: string):[IDependency,IMutileVersion] => {
+export const pnpmAnalyze = (
+  packageJsonPath: string,
+): [IDependency, IMutileVersion, INode[]?, ILinks[]?] => {
   // main方法
-
-  const data = fs.readFileSync(packageJsonPath, 'utf8');
+  const data = fs.readFileSync(packageJsonPath, { encoding: 'utf8' });
   //  读取package.json文件的内容
   const config = JSON.parse(data);
-  const [jsondata, multipleVesion] = analyzeDependencies(config);
+  const [jsondata, multipleVesion, chartNode, chartLink] = analyzeDependencies(config);
 
   // const [, circleObj] = cycle(jsondata);
   // console.log(circleObj);
-  return [jsondata, multipleVesion];
+  return [jsondata, multipleVesion, chartNode, chartLink];
 };
