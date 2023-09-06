@@ -1,4 +1,4 @@
-import { IDependency, ILinks, IMutileVersion, INode } from '@/interfaces';
+import { IDependency, ILinks, IMutileVersion, INode } from '../../interfaces/index.js';
 import * as fs from 'fs';
 
 interface IPackage {

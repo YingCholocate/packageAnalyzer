@@ -1,5 +1,5 @@
 // 新建 axios.d.ts
-import { IDependency, ILinks, IMutileVersion, INode } from '@/interfaces';
+// import { IDependency, ILinks, IMutileVersion, INode } from '@/interfaces/insw';
 import axios from 'axios';
 
 declare module 'axios' {

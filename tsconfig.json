@@ -8,10 +8,10 @@
 
     /* Bundler mode */
     "moduleResolution": "Bundler",
-    "allowImportingTsExtensions":true,
+    "allowImportingTsExtensions": false,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
+    "noEmit": false,
     "esModuleInterop": true,
     "jsx": "react-jsx",
 
@@ -25,19 +25,18 @@
     "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"],
-      "lib/*": ["lib/*"],
-      "server/*":["server/*"]
+      "lib/*": ["lib/*"]
     }
   },
   "include": [
-    "src/cli/types/**/*",
+    "types/**/*",
     "lib/**/*",
     "bin/**/*",
     "src/**/*",
     "server/**/*",
     "package.json"
   ],
-  "exclude": ["node_modules", "**/*.spec.ts"],
+  "exclude": ["node_modules"],
   "ts-node": { "esm": true },
   "references": [{ "path": "./tsconfig.node.json" }]
 }

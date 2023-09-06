@@ -1,15 +1,12 @@
-// import open from 'open';
+import open from 'open';
 import path, { dirname } from 'path';
 import express from 'express';
 import { fileURLToPath } from 'url';
-import { PACKAGE_PATH } from './util.ts';
-import { pnpmAnalyze } from './cli/commands/pnpm-analyze.ts';
-import { generateDepth } from './cli/commands/depth.ts';
+import { PACKAGE_PATH } from './util.js';
+import { pnpmAnalyze } from './cli/commands/pnpm-analyze.js';
+import { generateDepth } from './cli/commands/depth.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-console.log('__dirname', __dirname);
-const fullName = path.basename(__dirname);
-console.log('fullName', fullName);
 export const generateServer = () => {
   const app = express();
   // 中间件处理
@@ -19,14 +16,8 @@ export const generateServer = () => {
     console.log('Server is running on port 3000');
   });
 
-  app.get('/', (_, res) => {
-    // 开发环境
-    if (true) {
-    } else {
-      res.sendFile(path.join(__dirname, './public'));
-    }
-  });
-  // open('http://localhost:3000/');
+  app.use('/', express.static(path.join(__dirname, './public')));
+  open('http://localhost:3000/');
   app.get('/data', (_, res) => {
     const [jsondata, multipleVesion, chartNode, chartLink] = pnpmAnalyze(PACKAGE_PATH);
     res.json({
@@ -44,4 +35,4 @@ export const generateServer = () => {
     res.json(result);
   });
 };
-generateServer();
+// generateServer();

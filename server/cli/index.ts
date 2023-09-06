@@ -1,11 +1,11 @@
+import { generateServer } from '../index.js';
 import { Command } from 'commander';
 import chalk from 'chalk';
-import { pnpmAnalyze } from './commands/pnpm-analyze.ts';
-import { generateJsonFile } from './commands/generateJsonFile.ts';
-import { generateDepth } from './commands/depth.ts';
+import { generateDepth } from './commands/depth.js';
+import { generateJsonFile } from './commands/generateJsonFile.js';
 import * as fs from 'fs';
-import { generateServer } from 'server/index.ts';
-import { PACKAGE_PATH } from 'server/util.ts';
+import { pnpmAnalyze } from './commands/pnpm-analyze.js';
+import { PACKAGE_PATH } from '../../server/util.js';
 
 (async () => {
   const program = new Command();
@@ -33,7 +33,7 @@ import { PACKAGE_PATH } from 'server/util.ts';
         const result = await generateDepth(parseInt(options.depth), jsondata);
         console.log(result);
         fs.writeFile('./depthdata.json', JSON.stringify(result), () => {
-          console.error('generate json data to ./depthdata.json');
+          console.log('generate json data to ./depthdata.json');
         });
       }
       if (options.json !== undefined) {

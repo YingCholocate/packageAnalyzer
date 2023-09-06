@@ -3,7 +3,7 @@ import * as echarts from 'echarts';
 import { ComposeOption } from 'echarts/core';
 import { useEffect, useRef, useState } from 'react';
 import { getAllData, getDepyhData } from './api';
-import { IDependency, ILinks, IMutileVersion, INode } from './interfaces';
+import { ILinks, IMutileVersion, INode } from './interfaces';
 import TreeEcharts from './component/TreeEcharts';
 
 type ECOption = ComposeOption<echarts.GraphSeriesOption>;

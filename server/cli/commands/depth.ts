@@ -1,4 +1,4 @@
-import { IDependency, ILinks, INode } from '@/interfaces';
+import { IDependency, ILinks, INode } from '../../interfaces/index.js';
 
 export const generateDepth = (
   depth: number,

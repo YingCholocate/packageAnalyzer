@@ -15,7 +15,7 @@ export default function TreeEcharts(props: { multipleVersion: IMutileVersion }) 
       ],
     };
   });
-  console.log(data);
+  const treedata = { name: 'root', children: data };
   const treeRef = useRef(null);
 
   const renderRef = useRef(false);
@@ -35,39 +35,38 @@ export default function TreeEcharts(props: { multipleVersion: IMutileVersion }) 
       },
 
       series: [
-        ...data.map((d) => {
-          return {
-            type: 'tree',
-            data: d,
-            top: '1%',
-            left: '7%',
-            bottom: '1%',
-            right: '20%',
+        {
+          type: 'tree',
+          name: 'tree1',
+          data: [treedata],
+          top: '1%',
+          left: '7%',
+          bottom: '1%',
+          right: '20%',
 
-            symbolSize: 7,
+          symbolSize: 7,
 
+          label: {
+            position: 'left',
+            verticalAlign: 'middle',
+            align: 'right',
+            fontSize: 9,
+          },
+
+          leaves: {
             label: {
-              position: 'left',
+              position: 'right',
               verticalAlign: 'middle',
-              align: 'right',
-              fontSize: 9,
+              align: 'left',
             },
-
-            leaves: {
-              label: {
-                position: 'right',
-                verticalAlign: 'middle',
-                align: 'left',
-              },
-            },
-            emphasis: {
-              focus: 'descendant',
-            },
-            expandAndCollapse: true,
-            animationDuration: 550,
-            animationDurationUpdate: 750,
-          };
-        }),
+          },
+          emphasis: {
+            focus: 'descendant',
+          },
+          expandAndCollapse: true,
+          animationDuration: 550,
+          animationDurationUpdate: 750,
+        },
       ],
     };
     option && myChart.current.setOption(option as echarts.EChartOption);
