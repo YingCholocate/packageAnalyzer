@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "server":"ts-node server/runDevServer.ts",
+    "server": "ts-node server/runDevServer.ts",
     "build": "tsc -p tsconfig.json && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
@@ -28,6 +28,8 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
     "@types/express": "^4.17.17",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
@@ -36,22 +38,30 @@
     "@vitejs/plugin-react": "^4.0.3",
     "chalk": "4.0.0",
     "commander": "^11.0.0",
-    "eslint": "^8.45.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint": "^7.15.0",
+    "eslint-config-ali": "^12.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^4.0.4",
     "eslint-plugin-react-refresh": "^0.4.3",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.3",
+    "prettier-eslint": "^15.0.1",
     "terser": "^5.19.3",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
   },
   "lint-staged": {
     "*.ts?(x)": [
-      "eslint --fix --ignore-path ./.eslintignore",
-      "prettier --config ./.prettierrc.js --write"
+      "eslint --fix --ignore-path ./.eslintignore"
     ]
   },
   "bin": {
     "analyzer-cli": "./bin/pkgAnalyzer-cli"
+  },
+  "script": {
+    "prepare": "husky install"
   }
 }
