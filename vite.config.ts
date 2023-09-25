@@ -37,4 +37,10 @@ export default () =>
         },
       },
     },
+    css: {
+      /* CSS 预处理器 */
+      preprocessorOptions: {
+        scss: {},
+      },
+    },
   });

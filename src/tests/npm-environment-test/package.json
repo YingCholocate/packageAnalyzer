@@ -1,0 +1,43 @@
+{
+  "name": "npm-environment-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "ansi-regex": "^6.0.1",
+    "ansi-styles": "^6.2.1",
+    "balanced-match": "^1.0.2",
+    "brace-expansion": "^2.0.1",
+    "color-convert": "^2.0.1",
+    "color-name": "^1.1.4",
+    "cross-spawn": "^7.0.3",
+    "eastasianwidth": "^0.2.0",
+    "emoji-regex": "^9.2.2",
+    "foreground-child": "^3.1.1",
+    "glob": "^10.3.7",
+    "is-fullwidth-code-point": "^3.0.0",
+    "isexe": "^2.0.0",
+    "jackspeak": "^2.3.0",
+    "lru-cache": "^10.0.1",
+    "minimatch": "^9.0.3",
+    "minipass": "^7.0.3",
+    "path-key": "^3.1.1",
+    "path-scurry": "^1.10.1",
+    "shebang-command": "^2.0.0",
+    "shebang-regex": "^3.0.0",
+    "signal-exit": "^4.1.0",
+    "string-width": "^5.1.2",
+    "string-width-cjs": "^4.2.3",
+    "strip-ansi": "^7.1.0",
+    "strip-ansi-cjs": "^6.0.1",
+    "which": "^2.0.2",
+    "wrap-ansi": "^8.1.0",
+    "wrap-ansi-cjs": "^7.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

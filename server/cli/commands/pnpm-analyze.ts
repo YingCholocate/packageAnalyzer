@@ -34,7 +34,7 @@ function analyzeDependencies(
       multipleVession,
     );
     // TODO 需要更改路径，生产环境
-    const depPackageJsonPath = `./src/tests/npm-enviroment-test/node_modules/${dep}/package.json`;
+    const depPackageJsonPath = `./src/tests/npm-environment-test/node_modules/${dep}/package.json`;
 
     // 检查是否存在多个版本;
     if (fs.existsSync(depPackageJsonPath)) {

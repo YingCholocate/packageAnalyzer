@@ -1,5 +1,5 @@
 // 新建 axios.d.ts
-// import { IDependency, ILinks, IMutileVersion, INode } from '@/interfaces/insw';
+import { IDependency, ILinks, IMutileVersion, INode } from '@/interfaces/insw';
 declare module 'axios' {
   interface IAxios {
     chartNode: INode[];

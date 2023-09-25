@@ -5,6 +5,8 @@ import { useEffect, useRef, useState } from 'react';
 import { getAllData, getDepyhData } from './api';
 import { ILinks, IMutileVersion, INode } from './interfaces';
 import TreeEcharts from './component/TreeEcharts';
+import SideBar from './component/Siderbar';
+import LeftArrowIcon from './component/UI/LeftArrowIcon';
 
 type ECOption = ComposeOption<echarts.GraphSeriesOption>;
 
@@ -109,8 +111,24 @@ function App() {
         <input type="number" onChange={changeDepth}></input>
       </div>
       <div ref={chartRef} id="mycharts" style={{ height: '400px' }}></div>
+
+      {/* 侧边栏 */}
+      <div
+        style={{
+          position: 'absolute',
+          right: 0,
+          top: '50%',
+          translate: 'transform(0,50%)',
+          cursor: 'pointer',
+        }}
+        // TODO show drawer
+        // onClick={}
+      >
+        <LeftArrowIcon />
+        <SideBar />
+      </div>
+
       <p>Has Circular Dependency:</p>
-      {/* <div>{{ allData }}</div> */}
       <p>Has Multiple Versions :</p>
       {allData && <TreeEcharts multipleVersion={allData} />}
     </div>

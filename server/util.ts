@@ -1,1 +1,1 @@
-export const PACKAGE_PATH = './src/tests/npm-enviroment-test/package.json';
+export const PACKAGE_PATH = './src/tests/npm-environment-test/package.json';
