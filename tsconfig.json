@@ -26,7 +26,11 @@
     "paths": {
       "@/*": ["src/*"],
       "lib/*": ["lib/*"]
-    }
+    },
+
+    // environment
+    "types": ["vite/client"],
+    
   },
   "include": [
     "types/**/*",
@@ -34,7 +38,8 @@
     "bin/**/*",
     "src/**/*",
     "server/**/*",
-    "package.json"
+    "package.json",
+    "server/runDevServer.ts"
   ],
   "exclude": ["node_modules"],
   "ts-node": { "esm": true },

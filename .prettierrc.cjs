@@ -5,5 +5,5 @@ module.exports = {
   trailingComma: 'all',
   printWidth: 100,
   importOrderParserPlugins: true,
-  endOfLine: auto
+  // endOfLine: auto
 };
