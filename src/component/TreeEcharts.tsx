@@ -69,7 +69,7 @@ export default function TreeEcharts(props: { multipleVersion: IMutileVersion }) 
         },
       ],
     };
-    option && myChart.current.setOption(option as echarts.EChartOption);
+    option && myChart.current.setOption(option as echarts.EChartsOption);
     myChart.current?.hideLoading();
   }, [multipleVersion]);
 

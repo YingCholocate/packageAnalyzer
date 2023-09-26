@@ -8,3 +8,7 @@ export const getAllData = () => {
 export const getDepyhData = (depth: number) => {
   return request.get('/depth', { params: { depth } });
 };
+
+export const searchPackage = (packageName: string) => {
+  return request.get('/search', { params: { packageName } });
+};

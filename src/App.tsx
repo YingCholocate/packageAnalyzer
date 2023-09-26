@@ -5,9 +5,11 @@ import { useEffect, useRef, useState } from 'react';
 import { getAllData, getDepyhData } from './api';
 import { ILinks, IMutileVersion, INode } from './interfaces';
 import TreeEcharts from './component/TreeEcharts';
-import SideBar from './component/Siderbar';
 import LeftArrowIcon from './component/UI/LeftArrowIcon';
-
+import { SideBar } from './component/Siderbar';
+type Ref<T = any> = {
+  changeDrawShow: T;
+};
 type ECOption = ComposeOption<echarts.GraphSeriesOption>;
 
 function App() {
@@ -17,6 +19,13 @@ function App() {
   const renderRef = useRef(false);
   const [renderData, setRenderData] = useState<{ chartNode: INode[]; chartLink: ILinks[] }>();
   const [allData, setAllData] = useState<IMutileVersion>();
+
+  const showDrawRef = useRef<Ref>();
+
+  const updateChildState = () => {
+    showDrawRef?.current?.changeDrawShow();
+  };
+
   useEffect(() => {
     if (renderRef.current) {
       return;
@@ -71,7 +80,7 @@ function App() {
         ],
       };
 
-      myChart.current && myChart.current.setOption(option as echarts.EChartOption);
+      myChart.current && myChart.current.setOption(option as echarts.EChartsOption);
       myChart.current?.hideLoading();
     };
     getData();
@@ -121,13 +130,11 @@ function App() {
           translate: 'transform(0,50%)',
           cursor: 'pointer',
         }}
-        // TODO show drawer
-        // onClick={}
+        onClick={updateChildState}
       >
         <LeftArrowIcon />
-        <SideBar />
       </div>
-
+      <SideBar ref={showDrawRef} />
       <p>Has Circular Dependency:</p>
       <p>Has Multiple Versions :</p>
       {allData && <TreeEcharts multipleVersion={allData} />}

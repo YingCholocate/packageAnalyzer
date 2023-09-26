@@ -34,5 +34,8 @@ export const generateServer = () => {
     const result = generateDepth(parseInt(depth), jsondata);
     res.json(result);
   });
+
+  app.get('/search', (req, res) => {
+    res.json();
+  });
 };
-// generateServer();

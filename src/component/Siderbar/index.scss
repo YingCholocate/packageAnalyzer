@@ -6,7 +6,7 @@
     flex-direction:column;  
     /* 遮罩 */
     .mask-show {
-      position:fixed;
+        position:fixed;
         z-index:100;
         top:0px;
         bottom:0px;
@@ -36,4 +36,8 @@
       right: 0;
     }
   }
-  
+  .header{
+    float:left;
+    width:85%;
+    padding:10px;
+  }

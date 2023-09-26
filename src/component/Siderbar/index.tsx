@@ -1,9 +1,17 @@
-import { useState } from 'react';
+import { forwardRef, useImperativeHandle, useState } from 'react';
 import './index.scss';
+import SearchBar from './SearchBar';
 
-export default function SideBar() {
+export const SideBar = forwardRef((props, ref) => {
   const [drawShow, setDrawShow] = useState(false);
-  const closeDraw = () => {
+
+  useImperativeHandle(ref, () => ({
+    changeDrawShow: () => {
+      setDrawShow(true);
+    },
+  }));
+  const closeDraw = (e: any) => {
+    e.stopPropagation();
     setDrawShow(false);
   };
   return (
@@ -13,7 +21,8 @@ export default function SideBar() {
       {/* <!-- 抽屉层 --> */}
       <div className={`setbox ${drawShow ? 'show' : ''}`}>
         <div className="header">
-          <p className="fl">即时聊天</p>
+          <p className="fl">Search</p>
+          <SearchBar />
           <button className="off" onClick={closeDraw}>
             关闭
           </button>
@@ -21,4 +30,4 @@ export default function SideBar() {
       </div>
     </div>
   );
-}
+});
