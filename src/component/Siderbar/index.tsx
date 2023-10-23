@@ -2,7 +2,7 @@ import { forwardRef, useImperativeHandle, useState } from 'react';
 import './index.scss';
 import SearchBar from './SearchBar';
 
-export const SideBar = forwardRef((props, ref) => {
+export const SideBar = forwardRef((_, ref) => {
   const [drawShow, setDrawShow] = useState(false);
 
   useImperativeHandle(ref, () => ({

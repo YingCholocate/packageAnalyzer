@@ -10,12 +10,12 @@ import { PACKAGE_PATH } from '../../server/util.js';
 (async () => {
   const program = new Command();
   program
-    .name('pkganalyzer-cli')
+    .name('pkg-analyzer')
     .description('CLI to some JavaScript string utilities')
     .version('0.1.0');
 
   program
-    .command('analyzer-cli')
+    .command('analyze')
     .description('analyze npm package')
     .option('--pnpmAnalyze', 'analyze pnpm package')
     .option('--json [file-path]', 'change json to file')

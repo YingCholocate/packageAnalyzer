@@ -1,8 +1,9 @@
 {
-  "name": "package-analyzer",
-  "private": true,
+  "name": "pkg-analyzer",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
+  "main":"build/server/cli/index.js",
   "scripts": {
     "dev": "vite",
     "serve": "ts-node server/runDevServer.ts",
@@ -61,7 +62,7 @@
     ]
   },
   "bin": {
-    "analyzer-cli": "./bin/pkgAnalyzer-cli"
+    "analyzer-cli": "./bin/pkgAnalyzer-cli.cjs"
   },
   "script": {
     "prepare": "husky install"

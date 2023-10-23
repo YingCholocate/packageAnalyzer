@@ -35,7 +35,7 @@ export const generateServer = () => {
     res.json(result);
   });
 
-  app.get('/search', (req, res) => {
+  app.get('/search', (_, res) => {
     res.json();
   });
 };

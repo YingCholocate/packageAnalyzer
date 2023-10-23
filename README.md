@@ -17,7 +17,7 @@
 
 - 使用的是 pnpm，执行 pnpm install
 - pnpm run dev，启动网页，pnpm run server，启动服务器，注释 open 的代码
-- 执行 npm link 或 pnpm link -g （可能需要使用管理员执行命令行）
+- 执行 npm link 或 pnpm install （可能需要使用管理员执行命令行）
 - 即可使用 analyzer-cli --help 等命令
 
 # 测试的方法
