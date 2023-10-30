@@ -3,9 +3,9 @@
     "target": "ES2020",
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
+    "module": "ESNext",  
     "skipLibCheck": true,
-
+    
     /* Bundler mode */
     "moduleResolution": "Bundler",
     "allowImportingTsExtensions": false,
@@ -25,11 +25,12 @@
     "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"],
-      "lib/*": ["lib/*"]
+      "lib/*": ["lib/*"],
+      "server/*": ["server/*"]
     },
-
-    // environment
-    "types": ["vite/client"],
+ 
+    // // environment
+    // "types": ["vite/client"],
     
   },
   "include": [
@@ -39,7 +40,6 @@
     "src/**/*",
     "server/**/*",
     "package.json",
-    "server/runDevServer.ts"
   ],
   "exclude": ["node_modules"],
   "ts-node": { "esm": true },

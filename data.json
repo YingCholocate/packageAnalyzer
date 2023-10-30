@@ -1,1 +1,526 @@
-{"glob":{"version":"^10.3.3","dependencies":{"foreground-child":{"version":"^3.1.0","dependencies":{"cross-spawn":{"version":"^7.0.0","dependencies":{"path-key":{"version":"^3.1.0","dependencies":{"@types/node":{"version":"^11.13.0","dependencies":{}},"ava":{"version":"^1.4.1","dependencies":{}},"tsd":{"version":"^0.7.2","dependencies":{}},"xo":{"version":"^0.24.0","dependencies":{}}}},"shebang-command":{"version":"^2.0.0","dependencies":{"shebang-regex":{"version":"^3.0.0","dependencies":{"ava":{"version":"^1.4.1","dependencies":{}},"tsd":{"version":"^0.7.2","dependencies":{}},"xo":{"version":"^0.24.0","dependencies":{}}}},"ava":{"version":"^2.3.0","dependencies":{}},"xo":{"version":"^0.24.0","dependencies":{}}}},"which":{"version":"^2.0.1","dependencies":{"isexe":{"version":"^2.0.0","dependencies":{"mkdirp":{"version":"^0.5.1","dependencies":{}},"rimraf":{"version":"^2.5.0","dependencies":{}},"tap":{"version":"^10.3.0","dependencies":{}}}},"mkdirp":{"version":"^0.5.0","dependencies":{}},"rimraf":{"version":"^2.6.2","dependencies":{}},"tap":{"version":"^14.6.9","dependencies":{}}}},"@commitlint/cli":{"version":"^8.1.0","dependencies":{}},"@commitlint/config-conventional":{"version":"^8.1.0","dependencies":{}},"babel-core":{"version":"^6.26.3","dependencies":{}},"babel-jest":{"version":"^24.9.0","dependencies":{}},"babel-preset-moxy":{"version":"^3.1.0","dependencies":{}},"eslint":{"version":"^5.16.0","dependencies":{}},"eslint-config-moxy":{"version":"^7.1.0","dependencies":{}},"husky":{"version":"^3.0.5","dependencies":{}},"jest":{"version":"^24.9.0","dependencies":{}},"lint-staged":{"version":"^9.2.5","dependencies":{}},"mkdirp":{"version":"^0.5.1","dependencies":{}},"rimraf":{"version":"^3.0.0","dependencies":{}},"standard-version":{"version":"^7.0.0","dependencies":{}}}},"signal-exit":{"version":"^4.0.1","dependencies":{"@types/cross-spawn":{"version":"^6.0.2","dependencies":{}},"@types/node":{"version":"^18.15.11","dependencies":{}},"@types/signal-exit":{"version":"^3.0.1","dependencies":{}},"@types/tap":{"version":"^15.0.8","dependencies":{}},"c8":{"version":"^7.13.0","dependencies":{}},"prettier":{"version":"^2.8.6","dependencies":{}},"tap":{"version":"^16.3.4","dependencies":{}},"ts-node":{"version":"^10.9.1","dependencies":{}},"typedoc":{"version":"^0.23.28","dependencies":{}},"typescript":{"version":"^5.0.2","dependencies":{}}}},"@types/cross-spawn":{"version":"^6.0.2","dependencies":{}},"@types/node":{"version":"^18.15.11","dependencies":{}},"@types/tap":{"version":"^15.0.8","dependencies":{}},"c8":{"version":"^7.13.0","dependencies":{}},"prettier":{"version":"^2.8.6","dependencies":{}},"tap":{"version":"^16.3.4","dependencies":{}},"ts-node":{"version":"^10.9.1","dependencies":{}},"typedoc":{"version":"^0.24.2","dependencies":{}},"typescript":{"version":"^5.0.2","dependencies":{}}}},"jackspeak":{"version":"^2.0.3","dependencies":{"@isaacs/cliui":{"version":"^8.0.2","dependencies":{"string-width":{"version":"^5.1.2","dependencies":{"eastasianwidth":{"version":"^0.2.0","dependencies":{"mocha":{"version":"~1.9.0","dependencies":{}}}},"emoji-regex":{"version":"^9.2.2","dependencies":{"@babel/cli":{"version":"^7.4.4","dependencies":{}},"@babel/core":{"version":"^7.4.4","dependencies":{}},"@babel/plugin-proposal-unicode-property-regex":{"version":"^7.4.4","dependencies":{}},"@babel/preset-env":{"version":"^7.4.4","dependencies":{}},"@unicode/unicode-13.0.0":{"version":"^1.0.3","dependencies":{}},"mocha":{"version":"^6.1.4","dependencies":{}},"regexgen":{"version":"^1.3.0","dependencies":{}}}},"strip-ansi":{"version":"^7.0.1","dependencies":{"ansi-regex":{"version":"^6.0.1","dependencies":{"ava":{"version":"^3.15.0","dependencies":{}},"tsd":{"version":"^0.14.0","dependencies":{}},"xo":{"version":"^0.38.2","dependencies":{}}}},"ava":{"version":"^3.15.0","dependencies":{}},"tsd":{"version":"^0.17.0","dependencies":{}},"xo":{"version":"^0.44.0","dependencies":{}}}},"ava":{"version":"^3.15.0","dependencies":{}},"tsd":{"version":"^0.14.0","dependencies":{}},"xo":{"version":"^0.38.2","dependencies":{}}}},"string-width-cjs":{"version":"npm:string-width@^4.2.0","dependencies":{"emoji-regex":{"version":"^8.0.0","dependencies":{"@babel/cli":{"version":"^7.4.4","dependencies":{}},"@babel/core":{"version":"^7.4.4","dependencies":{}},"@babel/plugin-proposal-unicode-property-regex":{"version":"^7.4.4","dependencies":{}},"@babel/preset-env":{"version":"^7.4.4","dependencies":{}},"@unicode/unicode-13.0.0":{"version":"^1.0.3","dependencies":{}},"mocha":{"version":"^6.1.4","dependencies":{}},"regexgen":{"version":"^1.3.0","dependencies":{}}}},"is-fullwidth-code-point":{"version":"^3.0.0","dependencies":{"ava":{"version":"^1.3.1","dependencies":{}},"tsd-check":{"version":"^0.5.0","dependencies":{}},"xo":{"version":"^0.24.0","dependencies":{}}}},"strip-ansi":{"version":"^6.0.1","dependencies":{"ansi-regex":{"version":"^6.0.1","dependencies":{"ava":{"version":"^3.15.0","dependencies":{}},"tsd":{"version":"^0.14.0","dependencies":{}},"xo":{"version":"^0.38.2","dependencies":{}}}},"ava":{"version":"^3.15.0","dependencies":{}},"tsd":{"version":"^0.17.0","dependencies":{}},"xo":{"version":"^0.44.0","dependencies":{}}}},"ava":{"version":"^1.4.1","dependencies":{}},"tsd":{"version":"^0.7.1","dependencies":{}},"xo":{"version":"^0.24.0","dependencies":{}}}},"strip-ansi":{"version":"^7.0.1","dependencies":{"ansi-regex":{"version":"^6.0.1","dependencies":{"ava":{"version":"^3.15.0","dependencies":{}},"tsd":{"version":"^0.14.0","dependencies":{}},"xo":{"version":"^0.38.2","dependencies":{}}}},"ava":{"version":"^3.15.0","dependencies":{}},"tsd":{"version":"^0.17.0","dependencies":{}},"xo":{"version":"^0.44.0","dependencies":{}}}},"strip-ansi-cjs":{"version":"npm:strip-ansi@^6.0.1","dependencies":{"ansi-regex":{"version":"^5.0.1","dependencies":{"ava":{"version":"^3.15.0","dependencies":{}},"tsd":{"version":"^0.14.0","dependencies":{}},"xo":{"version":"^0.38.2","dependencies":{}}}},"ava":{"version":"^2.4.0","dependencies":{}},"tsd":{"version":"^0.10.0","dependencies":{}},"xo":{"version":"^0.25.3","dependencies":{}}}},"wrap-ansi":{"version":"^8.1.0","dependencies":{"ansi-styles":{"version":"^6.1.0","dependencies":{"ava":{"version":"^3.15.0","dependencies":{}},"svg-term-cli":{"version":"^2.1.1","dependencies":{}},"tsd":{"version":"^0.19.0","dependencies":{}},"xo":{"version":"^0.47.0","dependencies":{}}}},"string-width":{"version":"^5.0.1","dependencies":{"eastasianwidth":{"version":"^0.2.0","dependencies":{"mocha":{"version":"~1.9.0","dependencies":{}}}},"emoji-regex":{"version":"^9.2.2","dependencies":{"@babel/cli":{"version":"^7.4.4","dependencies":{}},"@babel/core":{"version":"^7.4.4","dependencies":{}},"@babel/plugin-proposal-unicode-property-regex":{"version":"^7.4.4","dependencies":{}},"@babel/preset-env":{"version":"^7.4.4","dependencies":{}},"@unicode/unicode-13.0.0":{"version":"^1.0.3","dependencies":{}},"mocha":{"version":"^6.1.4","dependencies":{}},"regexgen":{"version":"^1.3.0","dependencies":{}}}},"strip-ansi":{"version":"^7.0.1","dependencies":{"ansi-regex":{"version":"^6.0.1","dependencies":{"ava":{"version":"^3.15.0","dependencies":{}},"tsd":{"version":"^0.14.0","dependencies":{}},"xo":{"version":"^0.38.2","dependencies":{}}}},"ava":{"version":"^3.15.0","dependencies":{}},"tsd":{"version":"^0.17.0","dependencies":{}},"xo":{"version":"^0.44.0","dependencies":{}}}},"ava":{"version":"^3.15.0","dependencies":{}},"tsd":{"version":"^0.14.0","dependencies":{}},"xo":{"version":"^0.38.2","dependencies":{}}}},"strip-ansi":{"version":"^7.0.1","dependencies":{"ansi-regex":{"version":"^6.0.1","dependencies":{"ava":{"version":"^3.15.0","dependencies":{}},"tsd":{"version":"^0.14.0","dependencies":{}},"xo":{"version":"^0.38.2","dependencies":{}}}},"ava":{"version":"^3.15.0","dependencies":{}},"tsd":{"version":"^0.17.0","dependencies":{}},"xo":{"version":"^0.44.0","dependencies":{}}}},"ava":{"version":"^3.15.0","dependencies":{}},"chalk":{"version":"^4.1.2","dependencies":{}},"coveralls":{"version":"^3.1.1","dependencies":{}},"has-ansi":{"version":"^5.0.1","dependencies":{}},"nyc":{"version":"^15.1.0","dependencies":{}},"tsd":{"version":"^0.25.0","dependencies":{}},"xo":{"version":"^0.44.0","dependencies":{}}}},"wrap-ansi-cjs":{"version":"npm:wrap-ansi@^7.0.0","dependencies":{"ansi-styles":{"version":"^4.0.0","dependencies":{"ava":{"version":"^3.15.0","dependencies":{}},"svg-term-cli":{"version":"^2.1.1","dependencies":{}},"tsd":{"version":"^0.19.0","dependencies":{}},"xo":{"version":"^0.47.0","dependencies":{}}}},"string-width":{"version":"^4.1.0","dependencies":{"eastasianwidth":{"version":"^0.2.0","dependencies":{"mocha":{"version":"~1.9.0","dependencies":{}}}},"emoji-regex":{"version":"^9.2.2","dependencies":{"@babel/cli":{"version":"^7.4.4","dependencies":{}},"@babel/core":{"version":"^7.4.4","dependencies":{}},"@babel/plugin-proposal-unicode-property-regex":{"version":"^7.4.4","dependencies":{}},"@babel/preset-env":{"version":"^7.4.4","dependencies":{}},"@unicode/unicode-13.0.0":{"version":"^1.0.3","dependencies":{}},"mocha":{"version":"^6.1.4","dependencies":{}},"regexgen":{"version":"^1.3.0","dependencies":{}}}},"strip-ansi":{"version":"^7.0.1","dependencies":{"ansi-regex":{"version":"^6.0.1","dependencies":{"ava":{"version":"^3.15.0","dependencies":{}},"tsd":{"version":"^0.14.0","dependencies":{}},"xo":{"version":"^0.38.2","dependencies":{}}}},"ava":{"version":"^3.15.0","dependencies":{}},"tsd":{"version":"^0.17.0","dependencies":{}},"xo":{"version":"^0.44.0","dependencies":{}}}},"ava":{"version":"^3.15.0","dependencies":{}},"tsd":{"version":"^0.14.0","dependencies":{}},"xo":{"version":"^0.38.2","dependencies":{}}}},"strip-ansi":{"version":"^6.0.0","dependencies":{"ansi-regex":{"version":"^6.0.1","dependencies":{"ava":{"version":"^3.15.0","dependencies":{}},"tsd":{"version":"^0.14.0","dependencies":{}},"xo":{"version":"^0.38.2","dependencies":{}}}},"ava":{"version":"^3.15.0","dependencies":{}},"tsd":{"version":"^0.17.0","dependencies":{}},"xo":{"version":"^0.44.0","dependencies":{}}}},"ava":{"version":"^2.1.0","dependencies":{}},"chalk":{"version":"^4.0.0","dependencies":{}},"coveralls":{"version":"^3.0.3","dependencies":{}},"has-ansi":{"version":"^4.0.0","dependencies":{}},"nyc":{"version":"^15.0.1","dependencies":{}},"xo":{"version":"^0.29.1","dependencies":{}}}},"@types/node":{"version":"^14.0.27","dependencies":{}},"@typescript-eslint/eslint-plugin":{"version":"^4.0.0","dependencies":{}},"@typescript-eslint/parser":{"version":"^4.0.0","dependencies":{}},"c8":{"version":"^7.3.0","dependencies":{}},"chai":{"version":"^4.2.0","dependencies":{}},"chalk":{"version":"^4.1.0","dependencies":{}},"cross-env":{"version":"^7.0.2","dependencies":{}},"eslint":{"version":"^7.6.0","dependencies":{}},"eslint-plugin-import":{"version":"^2.22.0","dependencies":{}},"eslint-plugin-node":{"version":"^11.1.0","dependencies":{}},"gts":{"version":"^3.0.0","dependencies":{}},"mocha":{"version":"^10.0.0","dependencies":{}},"rimraf":{"version":"^3.0.2","dependencies":{}},"rollup":{"version":"^2.23.1","dependencies":{}},"rollup-plugin-ts":{"version":"^3.0.2","dependencies":{}},"standardx":{"version":"^7.0.0","dependencies":{}},"typescript":{"version":"^4.0.0","dependencies":{}}}},"@types/node":{"version":"^18.15.11","dependencies":{}},"@types/pkgjs__parseargs":{"version":"^0.10.0","dependencies":{}},"@types/tap":{"version":"^15.0.8","dependencies":{}},"c8":{"version":"^7.13.0","dependencies":{}},"eslint-config-prettier":{"version":"^8.8.0","dependencies":{}},"prettier":{"version":"^2.8.6","dependencies":{}},"tap":{"version":"^16.3.4","dependencies":{}},"ts-node":{"version":"^10.9.1","dependencies":{}},"typedoc":{"version":"^0.23.28","dependencies":{}},"typescript":{"version":"^5.0.2","dependencies":{}}}},"minimatch":{"version":"^9.0.1","dependencies":{"brace-expansion":{"version":"^2.0.1","dependencies":{"balanced-match":{"version":"^1.0.0","dependencies":{"matcha":{"version":"^0.7.0","dependencies":{}},"tape":{"version":"^4.6.0","dependencies":{}}}},"@c4312/matcha":{"version":"^1.3.1","dependencies":{}},"tape":{"version":"^4.6.0","dependencies":{}}}},"@types/brace-expansion":{"version":"^1.1.0","dependencies":{}},"@types/node":{"version":"^18.15.11","dependencies":{}},"@types/tap":{"version":"^15.0.8","dependencies":{}},"c8":{"version":"^7.12.0","dependencies":{}},"eslint-config-prettier":{"version":"^8.6.0","dependencies":{}},"mkdirp":{"version":"1","dependencies":{}},"prettier":{"version":"^2.8.2","dependencies":{}},"tap":{"version":"^16.3.7","dependencies":{}},"ts-node":{"version":"^10.9.1","dependencies":{}},"typedoc":{"version":"^0.23.21","dependencies":{}},"typescript":{"version":"^4.9.3","dependencies":{}}}},"minipass":{"version":"^5.0.0 || ^6.0.2 || ^7.0.0","dependencies":{"@types/node":{"version":"^20.1.2","dependencies":{}},"@types/tap":{"version":"^15.0.8","dependencies":{}},"c8":{"version":"^7.13.0","dependencies":{}},"prettier":{"version":"^2.6.2","dependencies":{}},"tap":{"version":"^16.3.0","dependencies":{}},"ts-node":{"version":"^10.9.1","dependencies":{}},"typedoc":{"version":"^0.24.8","dependencies":{}},"typescript":{"version":"^5.1.3","dependencies":{}},"end-of-stream":{"version":"^1.4.0","dependencies":{}},"node-abort-controller":{"version":"^3.1.1","dependencies":{}},"sync-content":{"version":"^1.0.2","dependencies":{}},"through2":{"version":"^2.0.3","dependencies":{}}}},"path-scurry":{"version":"^1.10.1","dependencies":{"lru-cache":{"version":"^9.1.1 || ^10.0.0","dependencies":{"@size-limit/preset-small-lib":{"version":"^7.0.8","dependencies":{}},"@types/node":{"version":"^20.2.5","dependencies":{}},"@types/tap":{"version":"^15.0.6","dependencies":{}},"benchmark":{"version":"^2.1.4","dependencies":{}},"c8":{"version":"^7.11.2","dependencies":{}},"clock-mock":{"version":"^1.0.6","dependencies":{}},"esbuild":{"version":"^0.17.11","dependencies":{}},"eslint-config-prettier":{"version":"^8.5.0","dependencies":{}},"marked":{"version":"^4.2.12","dependencies":{}},"mkdirp":{"version":"^2.1.5","dependencies":{}},"prettier":{"version":"^2.6.2","dependencies":{}},"size-limit":{"version":"^7.0.8","dependencies":{}},"tap":{"version":"^16.3.4","dependencies":{}},"ts-node":{"version":"^10.9.1","dependencies":{}},"tslib":{"version":"^2.4.0","dependencies":{}},"typedoc":{"version":"^0.24.6","dependencies":{}},"typescript":{"version":"^5.0.4","dependencies":{}}}},"minipass":{"version":"^5.0.0 || ^6.0.2 || ^7.0.0","dependencies":{"@types/node":{"version":"^20.1.2","dependencies":{}},"@types/tap":{"version":"^15.0.8","dependencies":{}},"c8":{"version":"^7.13.0","dependencies":{}},"prettier":{"version":"^2.6.2","dependencies":{}},"tap":{"version":"^16.3.0","dependencies":{}},"ts-node":{"version":"^10.9.1","dependencies":{}},"typedoc":{"version":"^0.24.8","dependencies":{}},"typescript":{"version":"^5.1.3","dependencies":{}},"end-of-stream":{"version":"^1.4.0","dependencies":{}},"node-abort-controller":{"version":"^3.1.1","dependencies":{}},"sync-content":{"version":"^1.0.2","dependencies":{}},"through2":{"version":"^2.0.3","dependencies":{}}}},"@nodelib/fs.walk":{"version":"^1.2.8","dependencies":{}},"@types/node":{"version":"^20.1.4","dependencies":{}},"@types/tap":{"version":"^15.0.7","dependencies":{}},"c8":{"version":"^7.12.0","dependencies":{}},"eslint-config-prettier":{"version":"^8.6.0","dependencies":{}},"mkdirp":{"version":"^3.0.0","dependencies":{}},"prettier":{"version":"^2.8.3","dependencies":{}},"rimraf":{"version":"^5.0.1","dependencies":{}},"tap":{"version":"^16.3.4","dependencies":{}},"ts-node":{"version":"^10.9.1","dependencies":{}},"typedoc":{"version":"^0.23.24","dependencies":{}},"typescript":{"version":"^5.0.4","dependencies":{}}}},"@types/node":{"version":"^20.3.2","dependencies":{}},"@types/tap":{"version":"^15.0.7","dependencies":{}},"c8":{"version":"^7.12.0","dependencies":{}},"memfs":{"version":"^3.4.13","dependencies":{}},"mkdirp":{"version":"^2.1.4","dependencies":{}},"prettier":{"version":"^2.8.3","dependencies":{}},"rimraf":{"version":"^4.1.3","dependencies":{}},"tap":{"version":"^16.3.4","dependencies":{}},"ts-node":{"version":"^10.9.1","dependencies":{}},"typedoc":{"version":"^0.23.24","dependencies":{}},"typescript":{"version":"^4.9.4","dependencies":{}}}}}
+{
+  "glob": {
+    "version": "^10.3.3",
+    "dependencies": {
+      "foreground-child": {
+        "version": "^3.1.0",
+        "dependencies": {
+          "cross-spawn": {
+            "version": "^7.0.0",
+            "dependencies": {
+              "path-key": {
+                "version": "^3.1.0",
+                "dependencies": {
+                  "@types/node": { "version": "^11.13.0", "dependencies": {} },
+                  "ava": { "version": "^1.4.1", "dependencies": {} },
+                  "tsd": { "version": "^0.7.2", "dependencies": {} },
+                  "xo": { "version": "^0.24.0", "dependencies": {} }
+                }
+              },
+              "shebang-command": {
+                "version": "^2.0.0",
+                "dependencies": {
+                  "shebang-regex": {
+                    "version": "^3.0.0",
+                    "dependencies": {
+                      "ava": { "version": "^1.4.1", "dependencies": {} },
+                      "tsd": { "version": "^0.7.2", "dependencies": {} },
+                      "xo": { "version": "^0.24.0", "dependencies": {} }
+                    }
+                  },
+                  "ava": { "version": "^2.3.0", "dependencies": {} },
+                  "xo": { "version": "^0.24.0", "dependencies": {} }
+                }
+              },
+              "which": {
+                "version": "^2.0.1",
+                "dependencies": {
+                  "isexe": {
+                    "version": "^2.0.0",
+                    "dependencies": {
+                      "mkdirp": { "version": "^0.5.1", "dependencies": {} },
+                      "rimraf": { "version": "^2.5.0", "dependencies": {} },
+                      "tap": { "version": "^10.3.0", "dependencies": {} }
+                    }
+                  },
+                  "mkdirp": { "version": "^0.5.0", "dependencies": {} },
+                  "rimraf": { "version": "^2.6.2", "dependencies": {} },
+                  "tap": { "version": "^14.6.9", "dependencies": {} }
+                }
+              },
+              "@commitlint/cli": { "version": "^8.1.0", "dependencies": {} },
+              "@commitlint/config-conventional": { "version": "^8.1.0", "dependencies": {} },
+              "babel-core": { "version": "^6.26.3", "dependencies": {} },
+              "babel-jest": { "version": "^24.9.0", "dependencies": {} },
+              "babel-preset-moxy": { "version": "^3.1.0", "dependencies": {} },
+              "eslint": { "version": "^5.16.0", "dependencies": {} },
+              "eslint-config-moxy": { "version": "^7.1.0", "dependencies": {} },
+              "husky": { "version": "^3.0.5", "dependencies": {} },
+              "jest": { "version": "^24.9.0", "dependencies": {} },
+              "lint-staged": { "version": "^9.2.5", "dependencies": {} },
+              "mkdirp": { "version": "^0.5.1", "dependencies": {} },
+              "rimraf": { "version": "^3.0.0", "dependencies": {} },
+              "standard-version": { "version": "^7.0.0", "dependencies": {} }
+            }
+          },
+          "signal-exit": {
+            "version": "^4.0.1",
+            "dependencies": {
+              "@types/cross-spawn": { "version": "^6.0.2", "dependencies": {} },
+              "@types/node": { "version": "^18.15.11", "dependencies": {} },
+              "@types/signal-exit": { "version": "^3.0.1", "dependencies": {} },
+              "@types/tap": { "version": "^15.0.8", "dependencies": {} },
+              "c8": { "version": "^7.13.0", "dependencies": {} },
+              "prettier": { "version": "^2.8.6", "dependencies": {} },
+              "tap": { "version": "^16.3.4", "dependencies": {} },
+              "ts-node": { "version": "^10.9.1", "dependencies": {} },
+              "typedoc": { "version": "^0.23.28", "dependencies": {} },
+              "typescript": { "version": "^5.0.2", "dependencies": {} }
+            }
+          },
+          "@types/cross-spawn": { "version": "^6.0.2", "dependencies": {} },
+          "@types/node": { "version": "^18.15.11", "dependencies": {} },
+          "@types/tap": { "version": "^15.0.8", "dependencies": {} },
+          "c8": { "version": "^7.13.0", "dependencies": {} },
+          "prettier": { "version": "^2.8.6", "dependencies": {} },
+          "tap": { "version": "^16.3.4", "dependencies": {} },
+          "ts-node": { "version": "^10.9.1", "dependencies": {} },
+          "typedoc": { "version": "^0.24.2", "dependencies": {} },
+          "typescript": { "version": "^5.0.2", "dependencies": {} }
+        }
+      },
+      "jackspeak": {
+        "version": "^2.0.3",
+        "dependencies": {
+          "@isaacs/cliui": {
+            "version": "^8.0.2",
+            "dependencies": {
+              "string-width": {
+                "version": "^5.1.2",
+                "dependencies": {
+                  "eastasianwidth": {
+                    "version": "^0.2.0",
+                    "dependencies": { "mocha": { "version": "~1.9.0", "dependencies": {} } }
+                  },
+                  "emoji-regex": {
+                    "version": "^9.2.2",
+                    "dependencies": {
+                      "@babel/cli": { "version": "^7.4.4", "dependencies": {} },
+                      "@babel/core": { "version": "^7.4.4", "dependencies": {} },
+                      "@babel/plugin-proposal-unicode-property-regex": {
+                        "version": "^7.4.4",
+                        "dependencies": {}
+                      },
+                      "@babel/preset-env": { "version": "^7.4.4", "dependencies": {} },
+                      "@unicode/unicode-13.0.0": { "version": "^1.0.3", "dependencies": {} },
+                      "mocha": { "version": "^6.1.4", "dependencies": {} },
+                      "regexgen": { "version": "^1.3.0", "dependencies": {} }
+                    }
+                  },
+                  "strip-ansi": {
+                    "version": "^7.0.1",
+                    "dependencies": {
+                      "ansi-regex": {
+                        "version": "^6.0.1",
+                        "dependencies": {
+                          "ava": { "version": "^3.15.0", "dependencies": {} },
+                          "tsd": { "version": "^0.14.0", "dependencies": {} },
+                          "xo": { "version": "^0.38.2", "dependencies": {} }
+                        }
+                      },
+                      "ava": { "version": "^3.15.0", "dependencies": {} },
+                      "tsd": { "version": "^0.17.0", "dependencies": {} },
+                      "xo": { "version": "^0.44.0", "dependencies": {} }
+                    }
+                  },
+                  "ava": { "version": "^3.15.0", "dependencies": {} },
+                  "tsd": { "version": "^0.14.0", "dependencies": {} },
+                  "xo": { "version": "^0.38.2", "dependencies": {} }
+                }
+              },
+              "string-width-cjs": {
+                "version": "npm:string-width@^4.2.0",
+                "dependencies": {
+                  "emoji-regex": {
+                    "version": "^8.0.0",
+                    "dependencies": {
+                      "@babel/cli": { "version": "^7.4.4", "dependencies": {} },
+                      "@babel/core": { "version": "^7.4.4", "dependencies": {} },
+                      "@babel/plugin-proposal-unicode-property-regex": {
+                        "version": "^7.4.4",
+                        "dependencies": {}
+                      },
+                      "@babel/preset-env": { "version": "^7.4.4", "dependencies": {} },
+                      "@unicode/unicode-13.0.0": { "version": "^1.0.3", "dependencies": {} },
+                      "mocha": { "version": "^6.1.4", "dependencies": {} },
+                      "regexgen": { "version": "^1.3.0", "dependencies": {} }
+                    }
+                  },
+                  "is-fullwidth-code-point": {
+                    "version": "^3.0.0",
+                    "dependencies": {
+                      "ava": { "version": "^1.3.1", "dependencies": {} },
+                      "tsd-check": { "version": "^0.5.0", "dependencies": {} },
+                      "xo": { "version": "^0.24.0", "dependencies": {} }
+                    }
+                  },
+                  "strip-ansi": {
+                    "version": "^6.0.1",
+                    "dependencies": {
+                      "ansi-regex": {
+                        "version": "^6.0.1",
+                        "dependencies": {
+                          "ava": { "version": "^3.15.0", "dependencies": {} },
+                          "tsd": { "version": "^0.14.0", "dependencies": {} },
+                          "xo": { "version": "^0.38.2", "dependencies": {} }
+                        }
+                      },
+                      "ava": { "version": "^3.15.0", "dependencies": {} },
+                      "tsd": { "version": "^0.17.0", "dependencies": {} },
+                      "xo": { "version": "^0.44.0", "dependencies": {} }
+                    }
+                  },
+                  "ava": { "version": "^1.4.1", "dependencies": {} },
+                  "tsd": { "version": "^0.7.1", "dependencies": {} },
+                  "xo": { "version": "^0.24.0", "dependencies": {} }
+                }
+              },
+              "strip-ansi": {
+                "version": "^7.0.1",
+                "dependencies": {
+                  "ansi-regex": {
+                    "version": "^6.0.1",
+                    "dependencies": {
+                      "ava": { "version": "^3.15.0", "dependencies": {} },
+                      "tsd": { "version": "^0.14.0", "dependencies": {} },
+                      "xo": { "version": "^0.38.2", "dependencies": {} }
+                    }
+                  },
+                  "ava": { "version": "^3.15.0", "dependencies": {} },
+                  "tsd": { "version": "^0.17.0", "dependencies": {} },
+                  "xo": { "version": "^0.44.0", "dependencies": {} }
+                }
+              },
+              "strip-ansi-cjs": {
+                "version": "npm:strip-ansi@^6.0.1",
+                "dependencies": {
+                  "ansi-regex": {
+                    "version": "^5.0.1",
+                    "dependencies": {
+                      "ava": { "version": "^3.15.0", "dependencies": {} },
+                      "tsd": { "version": "^0.14.0", "dependencies": {} },
+                      "xo": { "version": "^0.38.2", "dependencies": {} }
+                    }
+                  },
+                  "ava": { "version": "^2.4.0", "dependencies": {} },
+                  "tsd": { "version": "^0.10.0", "dependencies": {} },
+                  "xo": { "version": "^0.25.3", "dependencies": {} }
+                }
+              },
+              "wrap-ansi": {
+                "version": "^8.1.0",
+                "dependencies": {
+                  "ansi-styles": {
+                    "version": "^6.1.0",
+                    "dependencies": {
+                      "ava": { "version": "^3.15.0", "dependencies": {} },
+                      "svg-term-cli": { "version": "^2.1.1", "dependencies": {} },
+                      "tsd": { "version": "^0.19.0", "dependencies": {} },
+                      "xo": { "version": "^0.47.0", "dependencies": {} }
+                    }
+                  },
+                  "string-width": {
+                    "version": "^5.0.1",
+                    "dependencies": {
+                      "eastasianwidth": {
+                        "version": "^0.2.0",
+                        "dependencies": { "mocha": { "version": "~1.9.0", "dependencies": {} } }
+                      },
+                      "emoji-regex": {
+                        "version": "^9.2.2",
+                        "dependencies": {
+                          "@babel/cli": { "version": "^7.4.4", "dependencies": {} },
+                          "@babel/core": { "version": "^7.4.4", "dependencies": {} },
+                          "@babel/plugin-proposal-unicode-property-regex": {
+                            "version": "^7.4.4",
+                            "dependencies": {}
+                          },
+                          "@babel/preset-env": { "version": "^7.4.4", "dependencies": {} },
+                          "@unicode/unicode-13.0.0": { "version": "^1.0.3", "dependencies": {} },
+                          "mocha": { "version": "^6.1.4", "dependencies": {} },
+                          "regexgen": { "version": "^1.3.0", "dependencies": {} }
+                        }
+                      },
+                      "strip-ansi": {
+                        "version": "^7.0.1",
+                        "dependencies": {
+                          "ansi-regex": {
+                            "version": "^6.0.1",
+                            "dependencies": {
+                              "ava": { "version": "^3.15.0", "dependencies": {} },
+                              "tsd": { "version": "^0.14.0", "dependencies": {} },
+                              "xo": { "version": "^0.38.2", "dependencies": {} }
+                            }
+                          },
+                          "ava": { "version": "^3.15.0", "dependencies": {} },
+                          "tsd": { "version": "^0.17.0", "dependencies": {} },
+                          "xo": { "version": "^0.44.0", "dependencies": {} }
+                        }
+                      },
+                      "ava": { "version": "^3.15.0", "dependencies": {} },
+                      "tsd": { "version": "^0.14.0", "dependencies": {} },
+                      "xo": { "version": "^0.38.2", "dependencies": {} }
+                    }
+                  },
+                  "strip-ansi": {
+                    "version": "^7.0.1",
+                    "dependencies": {
+                      "ansi-regex": {
+                        "version": "^6.0.1",
+                        "dependencies": {
+                          "ava": { "version": "^3.15.0", "dependencies": {} },
+                          "tsd": { "version": "^0.14.0", "dependencies": {} },
+                          "xo": { "version": "^0.38.2", "dependencies": {} }
+                        }
+                      },
+                      "ava": { "version": "^3.15.0", "dependencies": {} },
+                      "tsd": { "version": "^0.17.0", "dependencies": {} },
+                      "xo": { "version": "^0.44.0", "dependencies": {} }
+                    }
+                  },
+                  "ava": { "version": "^3.15.0", "dependencies": {} },
+                  "chalk": { "version": "^4.1.2", "dependencies": {} },
+                  "coveralls": { "version": "^3.1.1", "dependencies": {} },
+                  "has-ansi": { "version": "^5.0.1", "dependencies": {} },
+                  "nyc": { "version": "^15.1.0", "dependencies": {} },
+                  "tsd": { "version": "^0.25.0", "dependencies": {} },
+                  "xo": { "version": "^0.44.0", "dependencies": {} }
+                }
+              },
+              "wrap-ansi-cjs": {
+                "version": "npm:wrap-ansi@^7.0.0",
+                "dependencies": {
+                  "ansi-styles": {
+                    "version": "^4.0.0",
+                    "dependencies": {
+                      "ava": { "version": "^3.15.0", "dependencies": {} },
+                      "svg-term-cli": { "version": "^2.1.1", "dependencies": {} },
+                      "tsd": { "version": "^0.19.0", "dependencies": {} },
+                      "xo": { "version": "^0.47.0", "dependencies": {} }
+                    }
+                  },
+                  "string-width": {
+                    "version": "^4.1.0",
+                    "dependencies": {
+                      "eastasianwidth": {
+                        "version": "^0.2.0",
+                        "dependencies": { "mocha": { "version": "~1.9.0", "dependencies": {} } }
+                      },
+                      "emoji-regex": {
+                        "version": "^9.2.2",
+                        "dependencies": {
+                          "@babel/cli": { "version": "^7.4.4", "dependencies": {} },
+                          "@babel/core": { "version": "^7.4.4", "dependencies": {} },
+                          "@babel/plugin-proposal-unicode-property-regex": {
+                            "version": "^7.4.4",
+                            "dependencies": {}
+                          },
+                          "@babel/preset-env": { "version": "^7.4.4", "dependencies": {} },
+                          "@unicode/unicode-13.0.0": { "version": "^1.0.3", "dependencies": {} },
+                          "mocha": { "version": "^6.1.4", "dependencies": {} },
+                          "regexgen": { "version": "^1.3.0", "dependencies": {} }
+                        }
+                      },
+                      "strip-ansi": {
+                        "version": "^7.0.1",
+                        "dependencies": {
+                          "ansi-regex": {
+                            "version": "^6.0.1",
+                            "dependencies": {
+                              "ava": { "version": "^3.15.0", "dependencies": {} },
+                              "tsd": { "version": "^0.14.0", "dependencies": {} },
+                              "xo": { "version": "^0.38.2", "dependencies": {} }
+                            }
+                          },
+                          "ava": { "version": "^3.15.0", "dependencies": {} },
+                          "tsd": { "version": "^0.17.0", "dependencies": {} },
+                          "xo": { "version": "^0.44.0", "dependencies": {} }
+                        }
+                      },
+                      "ava": { "version": "^3.15.0", "dependencies": {} },
+                      "tsd": { "version": "^0.14.0", "dependencies": {} },
+                      "xo": { "version": "^0.38.2", "dependencies": {} }
+                    }
+                  },
+                  "strip-ansi": {
+                    "version": "^6.0.0",
+                    "dependencies": {
+                      "ansi-regex": {
+                        "version": "^6.0.1",
+                        "dependencies": {
+                          "ava": { "version": "^3.15.0", "dependencies": {} },
+                          "tsd": { "version": "^0.14.0", "dependencies": {} },
+                          "xo": { "version": "^0.38.2", "dependencies": {} }
+                        }
+                      },
+                      "ava": { "version": "^3.15.0", "dependencies": {} },
+                      "tsd": { "version": "^0.17.0", "dependencies": {} },
+                      "xo": { "version": "^0.44.0", "dependencies": {} }
+                    }
+                  },
+                  "ava": { "version": "^2.1.0", "dependencies": {} },
+                  "chalk": { "version": "^4.0.0", "dependencies": {} },
+                  "coveralls": { "version": "^3.0.3", "dependencies": {} },
+                  "has-ansi": { "version": "^4.0.0", "dependencies": {} },
+                  "nyc": { "version": "^15.0.1", "dependencies": {} },
+                  "xo": { "version": "^0.29.1", "dependencies": {} }
+                }
+              },
+              "@types/node": { "version": "^14.0.27", "dependencies": {} },
+              "@typescript-eslint/eslint-plugin": { "version": "^4.0.0", "dependencies": {} },
+              "@typescript-eslint/parser": { "version": "^4.0.0", "dependencies": {} },
+              "c8": { "version": "^7.3.0", "dependencies": {} },
+              "chai": { "version": "^4.2.0", "dependencies": {} },
+              "chalk": { "version": "^4.1.0", "dependencies": {} },
+              "cross-env": { "version": "^7.0.2", "dependencies": {} },
+              "eslint": { "version": "^7.6.0", "dependencies": {} },
+              "eslint-plugin-import": { "version": "^2.22.0", "dependencies": {} },
+              "eslint-plugin-node": { "version": "^11.1.0", "dependencies": {} },
+              "gts": { "version": "^3.0.0", "dependencies": {} },
+              "mocha": { "version": "^10.0.0", "dependencies": {} },
+              "rimraf": { "version": "^3.0.2", "dependencies": {} },
+              "rollup": { "version": "^2.23.1", "dependencies": {} },
+              "rollup-plugin-ts": { "version": "^3.0.2", "dependencies": {} },
+              "standardx": { "version": "^7.0.0", "dependencies": {} },
+              "typescript": { "version": "^4.0.0", "dependencies": {} }
+            }
+          },
+          "@types/node": { "version": "^18.15.11", "dependencies": {} },
+          "@types/pkgjs__parseargs": { "version": "^0.10.0", "dependencies": {} },
+          "@types/tap": { "version": "^15.0.8", "dependencies": {} },
+          "c8": { "version": "^7.13.0", "dependencies": {} },
+          "eslint-config-prettier": { "version": "^8.8.0", "dependencies": {} },
+          "prettier": { "version": "^2.8.6", "dependencies": {} },
+          "tap": { "version": "^16.3.4", "dependencies": {} },
+          "ts-node": { "version": "^10.9.1", "dependencies": {} },
+          "typedoc": { "version": "^0.23.28", "dependencies": {} },
+          "typescript": { "version": "^5.0.2", "dependencies": {} }
+        }
+      },
+      "minimatch": {
+        "version": "^9.0.1",
+        "dependencies": {
+          "brace-expansion": {
+            "version": "^2.0.1",
+            "dependencies": {
+              "balanced-match": {
+                "version": "^1.0.0",
+                "dependencies": {
+                  "matcha": { "version": "^0.7.0", "dependencies": {} },
+                  "tape": { "version": "^4.6.0", "dependencies": {} }
+                }
+              },
+              "@c4312/matcha": { "version": "^1.3.1", "dependencies": {} },
+              "tape": { "version": "^4.6.0", "dependencies": {} }
+            }
+          },
+          "@types/brace-expansion": { "version": "^1.1.0", "dependencies": {} },
+          "@types/node": { "version": "^18.15.11", "dependencies": {} },
+          "@types/tap": { "version": "^15.0.8", "dependencies": {} },
+          "c8": { "version": "^7.12.0", "dependencies": {} },
+          "eslint-config-prettier": { "version": "^8.6.0", "dependencies": {} },
+          "mkdirp": { "version": "1", "dependencies": {} },
+          "prettier": { "version": "^2.8.2", "dependencies": {} },
+          "tap": { "version": "^16.3.7", "dependencies": {} },
+          "ts-node": { "version": "^10.9.1", "dependencies": {} },
+          "typedoc": { "version": "^0.23.21", "dependencies": {} },
+          "typescript": { "version": "^4.9.3", "dependencies": {} }
+        }
+      },
+      "minipass": {
+        "version": "^5.0.0 || ^6.0.2 || ^7.0.0",
+        "dependencies": {
+          "@types/node": { "version": "^20.1.2", "dependencies": {} },
+          "@types/tap": { "version": "^15.0.8", "dependencies": {} },
+          "c8": { "version": "^7.13.0", "dependencies": {} },
+          "prettier": { "version": "^2.6.2", "dependencies": {} },
+          "tap": { "version": "^16.3.0", "dependencies": {} },
+          "ts-node": { "version": "^10.9.1", "dependencies": {} },
+          "typedoc": { "version": "^0.24.8", "dependencies": {} },
+          "typescript": { "version": "^5.1.3", "dependencies": {} },
+          "end-of-stream": { "version": "^1.4.0", "dependencies": {} },
+          "node-abort-controller": { "version": "^3.1.1", "dependencies": {} },
+          "sync-content": { "version": "^1.0.2", "dependencies": {} },
+          "through2": { "version": "^2.0.3", "dependencies": {} }
+        }
+      },
+      "path-scurry": {
+        "version": "^1.10.1",
+        "dependencies": {
+          "lru-cache": {
+            "version": "^9.1.1 || ^10.0.0",
+            "dependencies": {
+              "@size-limit/preset-small-lib": { "version": "^7.0.8", "dependencies": {} },
+              "@types/node": { "version": "^20.2.5", "dependencies": {} },
+              "@types/tap": { "version": "^15.0.6", "dependencies": {} },
+              "benchmark": { "version": "^2.1.4", "dependencies": {} },
+              "c8": { "version": "^7.11.2", "dependencies": {} },
+              "clock-mock": { "version": "^1.0.6", "dependencies": {} },
+              "esbuild": { "version": "^0.17.11", "dependencies": {} },
+              "eslint-config-prettier": { "version": "^8.5.0", "dependencies": {} },
+              "marked": { "version": "^4.2.12", "dependencies": {} },
+              "mkdirp": { "version": "^2.1.5", "dependencies": {} },
+              "prettier": { "version": "^2.6.2", "dependencies": {} },
+              "size-limit": { "version": "^7.0.8", "dependencies": {} },
+              "tap": { "version": "^16.3.4", "dependencies": {} },
+              "ts-node": { "version": "^10.9.1", "dependencies": {} },
+              "tslib": { "version": "^2.4.0", "dependencies": {} },
+              "typedoc": { "version": "^0.24.6", "dependencies": {} },
+              "typescript": { "version": "^5.0.4", "dependencies": {} }
+            }
+          },
+          "minipass": {
+            "version": "^5.0.0 || ^6.0.2 || ^7.0.0",
+            "dependencies": {
+              "@types/node": { "version": "^20.1.2", "dependencies": {} },
+              "@types/tap": { "version": "^15.0.8", "dependencies": {} },
+              "c8": { "version": "^7.13.0", "dependencies": {} },
+              "prettier": { "version": "^2.6.2", "dependencies": {} },
+              "tap": { "version": "^16.3.0", "dependencies": {} },
+              "ts-node": { "version": "^10.9.1", "dependencies": {} },
+              "typedoc": { "version": "^0.24.8", "dependencies": {} },
+              "typescript": { "version": "^5.1.3", "dependencies": {} },
+              "end-of-stream": { "version": "^1.4.0", "dependencies": {} },
+              "node-abort-controller": { "version": "^3.1.1", "dependencies": {} },
+              "sync-content": { "version": "^1.0.2", "dependencies": {} },
+              "through2": { "version": "^2.0.3", "dependencies": {} }
+            }
+          },
+          "@nodelib/fs.walk": { "version": "^1.2.8", "dependencies": {} },
+          "@types/node": { "version": "^20.1.4", "dependencies": {} },
+          "@types/tap": { "version": "^15.0.7", "dependencies": {} },
+          "c8": { "version": "^7.12.0", "dependencies": {} },
+          "eslint-config-prettier": { "version": "^8.6.0", "dependencies": {} },
+          "mkdirp": { "version": "^3.0.0", "dependencies": {} },
+          "prettier": { "version": "^2.8.3", "dependencies": {} },
+          "rimraf": { "version": "^5.0.1", "dependencies": {} },
+          "tap": { "version": "^16.3.4", "dependencies": {} },
+          "ts-node": { "version": "^10.9.1", "dependencies": {} },
+          "typedoc": { "version": "^0.23.24", "dependencies": {} },
+          "typescript": { "version": "^5.0.4", "dependencies": {} }
+        }
+      },
+      "@types/node": { "version": "^20.3.2", "dependencies": {} },
+      "@types/tap": { "version": "^15.0.7", "dependencies": {} },
+      "c8": { "version": "^7.12.0", "dependencies": {} },
+      "memfs": { "version": "^3.4.13", "dependencies": {} },
+      "mkdirp": { "version": "^2.1.4", "dependencies": {} },
+      "prettier": { "version": "^2.8.3", "dependencies": {} },
+      "rimraf": { "version": "^4.1.3", "dependencies": {} },
+      "tap": { "version": "^16.3.4", "dependencies": {} },
+      "ts-node": { "version": "^10.9.1", "dependencies": {} },
+      "typedoc": { "version": "^0.23.24", "dependencies": {} },
+      "typescript": { "version": "^4.9.4", "dependencies": {} }
+    }
+  }
+}

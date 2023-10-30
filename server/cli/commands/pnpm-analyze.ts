@@ -1,3 +1,4 @@
+import { PACKAGE_PATH } from '../../util.js';
 import { IDependency, ILinks, IMutileVersion, INode } from '../../interfaces/index.js';
 import * as fs from 'fs';
 
@@ -23,7 +24,6 @@ function analyzeDependencies(
     if (!checkedDependency.has(dep)) {
       chartNode.push({ id: dep, name: dep, value: version });
     }
-
     jsonDependency[dep] = { version: version, dependencies: {} };
     // 检查是否存在多个版本
     [, multipleVession] = hasCircularDependency(
@@ -118,3 +118,14 @@ export const pnpmAnalyze = (
   // console.log(circleObj);
   return [jsondata, multipleVesion, chartNode, chartLink];
 };
+pnpmAnalyze(PACKAGE_PATH);
+// console.log(
+//   'jsonData',
+//   jsondata,
+//   'multipleVesion',
+//   multipleVesion,
+//   'chartNode',
+//   chartNode,
+//   'chartLink',
+//   chartLink,
+// );

@@ -3,7 +3,7 @@
   "private": false,
   "version": "0.0.0",
   "type": "module",
-  "main":"build/server/cli/index.js",
+  "main": "build/server/cli/index.js",
   "scripts": {
     "dev": "vite",
     "serve": "ts-node server/runDevServer.ts",
@@ -27,7 +27,8 @@
     "open": "^9.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "scss": "^0.2.4"
+    "scss": "^0.2.4",
+    "ts-node": "^10.9.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
